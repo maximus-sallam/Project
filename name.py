@@ -1,3 +1,5 @@
 #!/usr/local/bin/python3.7
-name = "ada lovelace"
+first_name = "ada"
+last_name = "lovelace"
+
 print(name.title())
