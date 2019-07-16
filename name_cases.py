@@ -10,3 +10,9 @@ print(name.title())
 
 quote = ' once said, "Bitch, quit playin\'."'
 print(name + quote)
+
+dude = "\tGoobies \n\tGoober \n\tPooper"
+print(dude)
+print(dude.rstrip())
+print(dude.lstrip())
+print(dude.strip())
