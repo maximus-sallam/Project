@@ -21,17 +21,10 @@ while i < num: # This itterates through each guest and prints the guests name wi
     print(guests[i] + ", I've found a bigger table!")
     i = i + 1
 
-print("") # This is white space
-
 guests.insert(0, 'Richard Feynman') # Adds guest to the beginning of the list
 guests.insert(3, 'Pablo Escobar') # Inserts guest into the 3 position
 guests.append('Freddy Krueger') # Appends guest to the end of the list
 num = len(guests)
-
-i = 0
-while i < num: # This itterates through each guest and prints the guests name with a message
-    print(guests[i] + ", I've found a bigger table!")
-    i = i + 1
 
 print("") # This is white space
 
