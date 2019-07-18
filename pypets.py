@@ -1,6 +1,7 @@
+#!/usr/local/bin/python3.7
 ## Set availabel pet types and actions
 petTypes = ('dog', 'cat', 'rabbit', 'lizzard', 'bird', 'fish')
-petActions = ('feed', 'walk', 'play', 'sleep', 'nap') 
+petActions = ('feed', 'walk', 'play', 'sleep', 'nap')
 
 ## Get player name and pet type
 playerName = input("Welcome to pypets! \nWhat is your name? ").title()
@@ -25,7 +26,7 @@ class Dog():
     def feed(self):
         """Dog eats"""
         print(self.name + " eats what you gave them.")
-    
+
     def walk(self):
         """Walk dog"""
         print("You take " + self.name + " for a walk.")
@@ -53,7 +54,7 @@ class Cat():
     def feed(self):
         """Cat eats"""
         print(self.name + " eats what you gave them.")
-    
+
     def walk(self):
         """Walk Cat"""
         print(self.name + " doesn't what to go for a walk. it's a cat, dummy")
@@ -77,7 +78,7 @@ if typeChoice == 1:
     petName = input("What would you like to name your " + petType +"?")
     player_dog = Dog(petName, playerName)
     print("\n\nOk, " + player_dog.owner + " your new " + petType + " is named " + player_dog.name + "!")
-    print("\n\nWhat would you like to do with " + player_dog.name + "?")    
+    print("\n\nWhat would you like to do with " + player_dog.name + "?")
     currentPet = player_dog
 elif typeChoice == 2:
     petName = input("What would you like to name your " + petType +"?")
