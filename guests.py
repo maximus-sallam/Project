@@ -6,7 +6,7 @@ i = 0
 while i < num: # This itterates through each guest and prints the guests name with a message
     print("Please come over and eat my food, " + guests[i])
     i = i + 1
-
+print(len(guests))
 print("") # This is white space
 print("Oh dear! It appears that " + guests[2] + " won't be joining us.")
 
@@ -18,13 +18,13 @@ i = 0
 while i < num: # This itterates through each guest and prints the guests name with a message
     print(guests[i] + ", I've found a bigger table!")
     i = i + 1
-
+print(len(guests))
 guests.insert(0, 'Richard Feynman') # Adds guest to the beginning of the list
 guests.insert(3, 'Pablo Escobar') # Inserts guest into the 3 position
 guests.append('Freddy Krueger') # Appends guest to the end of the list
 num = len(guests)
 print("") # This is white space
-
+print(len(guests))
 i = 0
 while i < num: # This itterates through each guest and prints the guests name with a message
     print("Please come over and eat my food, " + guests[i])
@@ -38,7 +38,7 @@ print("Oh dear! The Hulk smashed the table and now I can only invite two people"
 #    sorry = guests.pop()
 #    print("Sorry " + sorry + ". You're no longer invited")
 #    i = i - 1
-
+print(len(guests))
 print("")
 sorry = guests.pop()
 print("Sorry " + sorry + ". You're no longer invited")
@@ -57,7 +57,10 @@ i = 0
 while i < num: #
     print("I hope to see you at dinner, " + guests[i])
     i = i + 1
+print(len(guests))
 
 del guests[0]
 del guests[0]
 print(guests)
+
+print(len(guests))
