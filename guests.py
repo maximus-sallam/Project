@@ -33,25 +33,25 @@ while i < num: # This itterates through each guest and prints the guests name wi
 print("") # This is white space
 print("Oh dear! The Hulk smashed the table and now I can only invite two people")
 
-i = 5
-while i > 0:
-    sorry = guests.pop()
-    print("Sorry " + sorry + ". You're no longer invited")
-    i = i - 1
+#i = 5
+#while i > 0:
+#    sorry = guests.pop()
+#    print("Sorry " + sorry + ". You're no longer invited")
+#    i = i - 1
 
 print("")
-#sorry = guests.pop()
-#print("Sorry " + sorry + ". You're no longer invited")
-#sorry = guests.pop()
-#print("Sorry " + sorry + ". You're no longer invited")
-#sorry = guests.pop()
-#print("Sorry " + sorry + ". You're no longer invited")
-#sorry = guests.pop()
-#print("Sorry " + sorry + ". You're no longer invited")
-#sorry = guests.pop()
-#print("Sorry " + sorry + ". You're no longer invited")
-#num = len(guests)
-#print("")
+sorry = guests.pop()
+print("Sorry " + sorry + ". You're no longer invited")
+sorry = guests.pop()
+print("Sorry " + sorry + ". You're no longer invited")
+sorry = guests.pop()
+print("Sorry " + sorry + ". You're no longer invited")
+sorry = guests.pop()
+print("Sorry " + sorry + ". You're no longer invited")
+sorry = guests.pop()
+print("Sorry " + sorry + ". You're no longer invited")
+num = len(guests)
+print("")
 
 i = 0
 while i < num: #
