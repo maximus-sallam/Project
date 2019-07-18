@@ -1,0 +1,15 @@
+#!/usr/local/bin/python3.7
+places = ['Korea','Japan','Thailand','Vietnam','Malaysia']
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse=True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse=True)
+print(places)
