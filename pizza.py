@@ -15,3 +15,11 @@ friend_pizzas.append('bangkok pokpok')
 print(pizzas)
 print(friend_pizzas)
 
+print("My favorite pizzas are:")
+for fav in pizzas:
+    print(fav)
+
+print("\nMy friend's favorite pizzas are:")
+for ffav in friend_pizzas:
+    print(ffav)
+
