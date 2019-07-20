@@ -175,3 +175,4 @@ actionChoice = int(input("number: "))
 actionType = petActions[actionChoice-1]
 getattr(currentPet, actionType)()
 
+
