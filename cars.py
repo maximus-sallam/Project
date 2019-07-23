@@ -7,3 +7,6 @@ for car in cars:
         print(car.upper())
     else:
         print(car.title())
+
+    if (car == 'suburu'):
+        print('lol')
