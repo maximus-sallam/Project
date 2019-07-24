@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3.7
 
-age = int(input("How many years since the person was born? "))
+age = int(input("How old is this person? "))
 
 if (age < 0):
     person = 'not born yet'
