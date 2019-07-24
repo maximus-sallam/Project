@@ -1,17 +1,11 @@
 #!/usr/local/bin/python3.7
-toppings = ['mushrooms', 'onions', 'pineapple']
+requested_toppings = ['mushrooms', 'onions', 'pineapple', 'extra cheese']
 
-if 'mushrooms' in toppings:
-    print('Yay!')
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
 
-if 'pepperoni' in toppings:
-    print('Great!')
-
-else:
-    print('Oh no!')
-
-if toppings != 'anchovies':
-    print('Hold the anchovies!')
-
-else:
-    print('WTF!')
+print("\nFinished making your pizza!")
