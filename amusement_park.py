@@ -11,11 +11,11 @@ else:
     print("Your admission cost is $10.")
 
 
-age = 12
+age = 66
 
 if (age < 4):
     price = 0
-elif (age < 18):
+elif (age < 18) or (age > 65):
     price = 5
 else:
     price = 10
