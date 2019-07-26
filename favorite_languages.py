@@ -7,40 +7,58 @@ favorite_languages = {
     'phil': 'python',
     }
 
-friends = ['phil', 'sarah']
+friends = ['phil', 'sarah', 'john', 'rick']
+people = ['phil', 'pooky', 'pokpok', 'pwet', 'dede', 'sarah']
+favpeeps = list(favorite_languages.keys())
+allpeeps = favpeeps + people + friends
 
-for name in favorite_languages.keys():
-    print(name.title())
+#print(set(allpeeps),'\n')
+#print(favpeeps)
 
-    if name in friends:
-        print(" Hi " + name.title() +
-            ", I see your favorite language is " +
-            favorite_languages[name].title() + "!")
+take = ', will you take our poll?'
+thanks = ', thanks for taking the poll.'
+buddy = 'My best buddy, '
+fav = 'Your favorite language is: '
 
-print("\n")
+for person in set(allpeeps):
+    if person in favorite_languages.keys():
+        if person in friends:
+            print(buddy + person.title() + thanks)
+            print(fav + favorite_languages[person].title())
+        else:
+            print(person.title() + thanks)
+            print(fav + favorite_languages[person].title())
+    elif  person not in favorite_languages.keys():
+        if person in friends:
+            print(buddy + person.title() + take)
+        else:
+            print(person.title() + take)
 
-print("Sarah's favorite language is " +
-    favorite_languages['sarah'].title() +
-    ".")
 
-print("\n")
+#print("\n")
 
-for name, language in favorite_languages.items():
-    print(name.title() + "'s favorite language is " +
-        language.title() + ".")
+#print("Sarah's favorite language is " +
+#    favorite_languages['sarah'].title() +
+#    ".")
 
-print("\n")
+#print("\n")
+
+#for name, language in favorite_languages.items():
+#    print(name.title() + "'s favorite language is " +
+#        language.title() + ".")
+
+#print("\n")
 
 #for name in favorite_languages.keys():
 #    print(name.title())
 
-if 'erin' not in favorite_languages.keys():
-    print("Erin, please take our poll!")
+#if 'erin' not in favorite_languages.keys():
+#    print("Erin, please take our poll!")
 
-print("\n")
+#print("\n")
 
-for name in sorted(favorite_languages.keys()):
-    print(name.title() + ", thank you for taking the poll.")
+#for name in sorted(favorite_languages.keys()):
+#    print(name.title() + ", thank you for taking the poll.")
 
 print("\n")
 
