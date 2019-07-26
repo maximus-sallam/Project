@@ -31,11 +31,21 @@ for name, language in favorite_languages.items():
 
 print("\n")
 
-for name in favorite_languages.keys():
-    print(name.title())
+#for name in favorite_languages.keys():
+#    print(name.title())
 
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
 
+print("\n")
+
 for name in sorted(favorite_languages.keys()):
     print(name.title() + ", thank you for taking the poll.")
+
+print("\n")
+
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+
+
