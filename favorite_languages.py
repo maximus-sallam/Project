@@ -11,3 +11,9 @@ print("Sarah's favorite language is " +
     favorite_languages['sarah'].title() +
     ".")
 
+print("\n")
+
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " +
+        language.title() + ".")
+
