@@ -6,6 +6,11 @@ glossary = {
     'list': 'A list is a collection which is ordered and changeable. In Python lists are written with square brackets.',
     'set': 'A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.',
     'variable': 'Variables are containers for storing data values.',
+    'indentation': 'Where in other programming languages the indentation in code is for readability only, in Python the indentation is very important.',
+    'comment': 'Python has commenting capability for the purpose of in-code documentation.',
+    'operators': 'Operators are used to perform operations on variables and values.',
+    'while loop': 'With the while loop we can execute a set of statements as long as a condition is true.',
+    'for loop': 'A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).',
     }
 
 for key in glossary:
