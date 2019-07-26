@@ -34,4 +34,5 @@ print("\n")
 for name in favorite_languages.keys():
     print(name.title())
 
-
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
