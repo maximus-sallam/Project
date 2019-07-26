@@ -28,7 +28,7 @@ for person in set(allpeeps):
         else:
             print(person.title() + thanks)
             print(fav + favorite_languages[person].title())
-    elif  person not in favorite_languages.keys():
+    elif person not in favorite_languages.keys():
         if person in friends:
             print(buddy + person.title() + take)
         else:
