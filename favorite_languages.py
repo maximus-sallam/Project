@@ -18,7 +18,7 @@ allpeeps = favpeeps + people + friends
 take = ', will you take our poll?'
 thanks = ', thanks for taking the poll.'
 buddy = 'My best buddy, '
-fav = 'Your favorite language is: '
+fav = '\tYour favorite language is: '
 
 for person in set(allpeeps):
     if person in favorite_languages.keys():
