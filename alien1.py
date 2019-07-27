@@ -1,13 +1,13 @@
 #!/usr/local/bin/python3.7
 
-alien_0 = {'color': 'green'}
-alien_1 = {'color': 'yellow'}
-alien_2 = {'color': 'red'}
+#alien_0 = {'color': 'green'}
+#alien_1 = {'color': 'yellow'}
+#alien_2 = {'color': 'red'}
 
-aliens = [alien_0, alien_1, alien_2]
+#aliens = [alien_0, alien_1, alien_2]
 
-for alien in aliens:
-    print(alien)
+#for alien in aliens:
+#    print(alien)
 
 # Make an empty list for storing alients.
 aliens = []
@@ -19,6 +19,12 @@ for alien_number in range(30):
                 'speed': 'slow',
                 }
     aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
 
 # Show the first 5 aliiens.
 for alien in aliens[:5]:
