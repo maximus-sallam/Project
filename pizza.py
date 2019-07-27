@@ -23,3 +23,15 @@ print("\nMy friend's favorite pizzas are:")
 for ffav in friend_pizzas:
     print(ffav)
 
+# Store information about a pizza being ordered.
+pizza = {
+    'crust': 'think',
+    'toppings': ['mushrooms', 'extra cheese'],
+    }
+
+#Summerize the order.
+print("You ordered a " + pizza['crust'] + "-crust pizza " +
+        "with the following toppings:")
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
