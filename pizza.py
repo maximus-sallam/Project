@@ -3,11 +3,11 @@ pizzas = ['cheese', 'pepperoni', 'meat', 'garlic']
 friend_pizzas = pizzas[:]
 
 for pizza in pizzas:
-    print("Would you like a " + pizza.title() + " Pizza?\n")
+    print("Would you like a " + pizza.title() + " Pizza?")
 
 print("There are so many different pizzas to choose from here!")
 print("Go ahead... Stick the pizza in your butt.")
-print("That's it. Who's a dirty pizza lover? You are!\n")
+print("That's it. Who's a dirty pizza lover? You are!")
 
 pizzas.append('angeles pokpok')
 friend_pizzas.append('bangkok pokpok')
