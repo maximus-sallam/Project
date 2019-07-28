@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3.7
-pizzas = ['cheese','pepperoni','meat','garlic']
+pizzas = ['cheese', 'pepperoni', 'meat', 'garlic']
 friend_pizzas = pizzas[:]
 
 for pizza in pizzas:
