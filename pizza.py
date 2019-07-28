@@ -27,11 +27,11 @@ for ffav in friend_pizzas:
 pizza = {
     'crust': 'think',
     'toppings': ['mushrooms', 'extra cheese'],
-    }
+}
 
-#Summerize the order.
-print("You ordered a " + pizza['crust'] + "-crust pizza " +
-        "with the following toppings:")
+# Summerize the order.
+print('You ordered a ' + pizza['crust'] + '-crust pizza ' +
+      'with the following toppings:')
 
 for topping in pizza['toppings']:
     print("\t" + topping)
