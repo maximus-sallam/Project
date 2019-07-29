@@ -1,19 +1,31 @@
 #!/usr/local/bin/python3.7
 
-person = {
+jHiggins = {
     'first_name': 'joe',
     'last_name': 'higgins',
     'birthday': 'may 9',
     'city': 'stockholm',
-    }
+}
 
-for key in person:
-    if key == 'first_name':
-        print("Meet " + person[key].title())
-    if key == 'last_name':
-        print("He's a member of the " + person[key].title() + " clan.")
-    if key == 'birthday':
-        print("His birthday is on " + person[key] + "th.")
-    if key == 'city':
-        print("He lives in " + person[key].title())
+aMamalakis = {
+    'first_name': 'alex',
+    'last_name': 'mamalakis',
+    'birthday': 'may 16',
+    'city': 'houston',
+}
 
+cRawls = {
+    'first_name': 'camron',
+    'last_name': 'rawls',
+    'birthday': 'march 17',
+    'city': 'hick town',
+}
+
+people = [jHiggins, aMamalakis, cRawls]
+
+for userInfo in people:
+    print(userInfo['first_name'].title(),
+          userInfo['last_name'].title(), "is from ",
+          userInfo['city'].title() +
+          ". His birthday is",
+          userInfo['birthday'].title())
