@@ -6,4 +6,4 @@ favorite_places = {
 }
 
 for name in favorite_places:
-    print(name + "'s favorite places are", ", ".join(favorite_places[name]))
+    print(name.title() + "'s favorite places are", ", ".join(favorite_places[name]).title())
