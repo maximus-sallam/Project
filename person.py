@@ -25,7 +25,7 @@ people = [jHiggins, aMamalakis, cRawls]
 
 for userInfo in people:
     print(userInfo['first_name'].title(),
-          userInfo['last_name'].title(), "is from ",
+          userInfo['last_name'].title(), "is from",
           userInfo['city'].title() +
           ". His birthday is",
           userInfo['birthday'].title())
