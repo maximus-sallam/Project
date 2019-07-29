@@ -8,7 +8,7 @@ numbers = {
     'cortney': ['8', '4', '2'],
     }
 
-fav = '\'s favorite number is '
+fav = '\'s favorite number is'
 
 for key, value in numbers.items():
     if key == 'joe':
