@@ -6,6 +6,7 @@ numbers = {
     'max': ['69', '42', '64'],
     'ven': ['7', '21', '5'],
     'cortney': ['8', '4', '2'],
+    'boston': ['42', '12', '69'],
     }
 
 fav = '\'s favorite number is'
@@ -21,4 +22,5 @@ for key, value in numbers.items():
         print(key.title() + fav, ", ".join(numbers[key]))
     if key == 'cortney':
         print(key.title() + fav, ", ".join(numbers[key]))
-
+    if key == 'boston':
+        print(key.title() + fav, ", ".join(numbers[key]) + ". lol")
