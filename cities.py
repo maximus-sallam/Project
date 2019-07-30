@@ -29,3 +29,14 @@ for city, cityInfo in cities.items():
         print("The city of", city.title(), "is located in", cityInfo['country'].title())
         print("The population of", city.title(), "is", cityInfo['population'])
         print("Fact about",city.title() + ":", cityInfo['fact'] + "\n")
+
+prompt = "\nPlease enter the name of a city you have visited:"
+prompt += "\n(Enter 'quit' when you are finished.) "
+
+while True:
+    city = input(prompt)
+
+    if city == 'quit':
+        break
+    else:
+        print("I'd love to go to " + city.title() + "!")
