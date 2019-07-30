@@ -9,10 +9,6 @@ prompt += "\nEnter 'quit' to end the program. "
 active = True
 while active:
     message = input(prompt)
-
-#message = ""
-#while message != 'quit':
-
     if message == 'quit':
         active = False
     else:
