@@ -16,7 +16,7 @@ for requested_topping in requested_toppings:
 #if 'extra cheese' in requested_toppings:
 #    print("Adding extra cheese.")
 
-print("\nFinished making your pizza!")
+print("\nFinished making your pizza!\n")
 
 prompt = "What would you like on your pizza?\n"
 prompt += "Enter 'quit' or 'exit' to exit\n"
@@ -27,5 +27,7 @@ while True:
     if topping == 'quit' or topping == 'exit':
         print("Your pizza is finished!")
         break
+    elif topping == "":
+        print("You didn't select a topping")
     else:
         print("I'm adding " + topping + " to your pizza now.\n")
