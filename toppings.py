@@ -17,3 +17,15 @@ for requested_topping in requested_toppings:
 #    print("Adding extra cheese.")
 
 print("\nFinished making your pizza!")
+
+prompt = "What would you like on your pizza?\n"
+prompt += "Enter 'quit' or 'exit' to exit\n"
+
+while True:
+    topping = input(prompt)
+
+    if topping == 'quit' or topping == 'exit':
+        print("Your pizza is finished!")
+        break
+    else:
+        print("I'm adding " + topping + " to your pizza now.\n")
