@@ -19,4 +19,13 @@ alden = {
 pets = [alden, bucky, riley]
 
 for pet in pets:
-    print(pet)
+    for key, value in pet.items():
+        print(key.title(), value.title())
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
