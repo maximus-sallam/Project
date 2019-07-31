@@ -18,5 +18,3 @@ for confirmed_user in confirmed_users:
 
 print("\nUnconfirmed Users:", unconfirmed_users)
 print("Confirmed Users: ", confirmed_users, "\n")
-
-
