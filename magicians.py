@@ -11,6 +11,8 @@ def make_great(magicians):
         count += 1
     return magicians
 
-show_magicians(magicians)
-make_great(magicians)
-show_magicians(magicians)
+show_magicians(make_great(magicians))
+
+# show_magicians(magicians)
+# make_great(magicians)
+# show_magicians(magicians)
