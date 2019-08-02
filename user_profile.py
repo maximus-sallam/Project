@@ -11,5 +11,4 @@ user_profile = build_profile('albert', 'einstein',
                              location='princeton',
                              field='physics')
 
-print(user_profile)58/*89*8+
-00ZeroDivisionError
+print(user_profile)
