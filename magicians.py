@@ -1,10 +1,11 @@
 def show_magicians(magician_list):
-    for magician in magician_list:
-        make_great(magician)
+    while magician_list:
+        current_magician = magician_list.pop()
+        print(current_magician)
 
-def make_great(magician):
-    print("The Great " + magician.title())
+
 
 magicians = ['merlin', 'houdini', 'magical max', 'gandolf the grey', 'ash ketchum']
+great_magicians = []
 
 show_magicians(magicians)
