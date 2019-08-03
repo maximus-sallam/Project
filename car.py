@@ -31,20 +31,29 @@ class Car():
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+    def __init__(self, make, model, year):
+        """Initialize attributes of the parent class."""
+        super().__init__(make, model, year)
+
+my_tesla = ElectricCar('tesla', 'model s', 2016)
+print(my_tesla.get_descriptive_name())
+
 my_used_car = Car('subaru', 'outback', 2013)
 print(my_used_car.get_descriptive_name())
 
-my_used_car.update_odometer(23500)
-my_used_car.read_odometer()
-my_used_car.incement_odometer(100)
-my_used_car.read_odometer()
+# my_used_car.update_odometer(23500)
+# my_used_car.read_odometer()
+# my_used_car.incement_odometer(100)
+# my_used_car.read_odometer()
 
-"""Attempting to roll the odometer back."""
-my_used_car.update_odometer(23500)
-my_used_car.read_odometer()
+# """Attempting to roll the odometer back."""
+# my_used_car.update_odometer(23500)
+# my_used_car.read_odometer()
 
-# my_new_car = Car('audi', 'a4', 2016)
-# print(my_new_car.get_descriptive_name())
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
 
 # my_new_car.odometer_reading = 23
 # my_new_car.update_odometer(22)
