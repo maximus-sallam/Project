@@ -63,9 +63,9 @@ class Car():
         elif miles > self.gas_tank:
             print("That's too far.")
         else:
-            self.increment_gas_tank(miles)
-            self.increment_odometer(miles)
             print("You drove " + str(miles) + " miles in a random direction.")
+            self.increment_odometer(miles)
+            self.increment_gas_tank(miles)
 
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
