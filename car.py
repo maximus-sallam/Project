@@ -48,6 +48,7 @@ class Car():
             print("The gas tank is now full.")
 
     def increment_gas_tank(self, gallons):
+        """Adjust the gas tank based on distance traveled."""
         if gallons > self.gas_tank:
             print("You need more gas to go that far.")
         else:
