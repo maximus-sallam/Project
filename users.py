@@ -4,6 +4,7 @@ class User():
         self.last_name = last_name
         self.username = username
         self.email_address = email_address
+        self.login_attempts = 0
 
     def describe_user(self):
         print("\nName: " + self.first_name.title() + " " + self.last_name.title())
@@ -12,6 +13,12 @@ class User():
 
     def greet_user(self):
         print("\nWelcome back, " + self.first_name.title())
+
+    def increment_login_attempts(self):
+        self.login_attempts = self.login_attempts + 1
+
+    def reset_login_attempts(self):
+        self.login_attempts = 0
 
 max = User('maximus', 'sallam', 'maximus-sallam', 'maximus.sallam@gmail.com')
 ven = User('venus', 'pondevida', 'venusseventeen', 'venuspondevida@gmail.com')
@@ -22,13 +29,22 @@ camron = User('camron', 'rawls', 'rawlsymcbawlsy','roatating-amber-warning-light
 
 max.describe_user()
 max.greet_user()
-ven.describe_user()
-ven.greet_user()
-joe.describe_user()
-joe.greet_user()
-cortney.describe_user()
-cortney.greet_user()
-alex.describe_user()
-alex.greet_user()
-camron.describe_user()
-camron.greet_user()
+max.increment_login_attempts()
+print(max.login_attempts)
+max.increment_login_attempts()
+print(max.login_attempts)
+max.increment_login_attempts()
+print(max.login_attempts)
+max.reset_login_attempts()
+print(max.login_attempts)
+
+# ven.describe_user()
+# ven.greet_user()
+# joe.describe_user()
+# joe.greet_user()
+# cortney.describe_user()
+# cortney.greet_user()
+# alex.describe_user()
+# alex.greet_user()
+# camron.describe_user()
+# camron.greet_user()
