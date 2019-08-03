@@ -56,7 +56,6 @@ class Car():
             print("You used " + str(gallons) + " gallons of gas.")
         self.read_gas_tank()
 
-
     def drive_somewhere(self, miles):
         """Drive to a random place."""
         if self.gas_tank == 0:
@@ -68,6 +67,19 @@ class Car():
             self.increment_odometer(miles)
             self.increment_gas_tank(miles)
 
+
+class Battery():
+    """A simple attempt to model a battery for an electric car."""
+
+    def __init__(self, battery_size=70):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print("This car has a " + str(self.battery_size) + "-kWh battery.")
+
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
@@ -77,30 +89,33 @@ class ElectricCar(Car):
         Then initializes attributes specific to an electric car.
         """
         super().__init__(make, model, year)
-        self.battery_size = 70
+        self.battery = Battery()
 
-    def describe_battery(self):
-        """Print a statement describing the battery size."""
-        print("This car has a " + str(self.battery_size) + "-kWh battery.")
+    def fill_gas_tank(self):
+        """Electric cars don't have gas tanks."""
+        print("This car doesn't need gas!")
+
+my_tesla = ElectricCar('tesla', 'model s', 2016)
+
+print(my_tesla.get_descriptive_name())
+
+my_tesla.battery.describe_battery()
+my_tesla.fill_gas_tank()
 
 
+# my_used_car = Car('subaru', 'outback', 2013)
+#
+# print(my_used_car.get_descriptive_name())
 
-# my_tesla = ElectricCar('tesla', 'model s', 2016)
+# my_used_car.read_gas_tank()
+# my_used_car.read_odometer()
+# my_used_car.fill_gas_tank()
+# my_used_car.drive_somewhere(25)
+# my_used_car.drive_somewhere(35)
+# my_used_car.drive_somewhere(20)
+# my_used_car.read_odometer()
+# my_used_car.drive_somewhere(25)
 
-# print(my_tesla.get_descriptive_name())
-# my_tesla.describe_battery()
-
-my_used_car = Car('subaru', 'outback', 2013)
-
-print(my_used_car.get_descriptive_name())
-my_used_car.read_gas_tank()
-my_used_car.read_odometer()
-my_used_car.fill_gas_tank()
-my_used_car.drive_somewhere(25)
-my_used_car.drive_somewhere(35)
-my_used_car.drive_somewhere(20)
-my_used_car.read_odometer()
-my_used_car.drive_somewhere(25)
 
 # my_used_car.update_odometer(23500)
 # my_used_car.read_odometer()
