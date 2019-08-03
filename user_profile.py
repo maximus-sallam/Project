@@ -12,3 +12,10 @@ user_profile = build_profile('albert', 'einstein',
                              field='physics')
 
 print(user_profile)
+
+max_profile = build_profile('max', 'sallam',
+                            location='philippines',
+                            field='it',
+                            penis='extra large')
+
+print(max_profile)
