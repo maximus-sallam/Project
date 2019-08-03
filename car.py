@@ -60,8 +60,8 @@ class Car():
         """Drive to a random place."""
         if self.gas_tank == 0:
             print("You need gas before you can go anywhere.")
-        elif miles > self.gas_tank:
-            print("That's too far.")
+        # elif miles > self.gas_tank:
+        #     print("That's too far.")
         else:
             print("You drove " + str(miles) + " miles in a random direction.")
             self.increment_odometer(miles)
