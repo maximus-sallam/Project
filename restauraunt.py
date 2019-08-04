@@ -22,22 +22,34 @@ class Restaurant():
     def increment_number_served(self, served):
         self.number_served += served
 
-restaurant = Restaurant('massagy boom boom', 'rubbing your dick')
 
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ['strawberry', 'vanilla', 'chocolate']
 
-print(restaurant.number_served)
-restaurant.number_served = 23
-restaurant.set_number_served(21)
-restaurant.set_number_served(25)
-print(restaurant.number_served)
-restaurant.increment_number_served(25)
-print(restaurant.number_served)
+    def display_flavors(self):
+        print("Our available flavors are:")
+        for flavor in self.flavors:
+            print("- " + flavor.title())
 
+restaurant = IceCreamStand('massagy boom boom', 'rubbing your dick')
+restaurant.describe_retaurant()
+restaurant.display_flavors()
 
-pokpokpalace = Restaurant('pokpok palace', 'pleasing you')
-vaginaisland = Restaurant('vagina island', 'puki')
-hookerfarms = Restaurant('hooker farms', 'riding your dick')
-girlsgalore = Restaurant('girls galore', 'making your penis happy')
+# print(restaurant.number_served)
+# restaurant.number_served = 23
+# restaurant.set_number_served(21)
+# restaurant.set_number_served(25)
+# print(restaurant.number_served)
+# restaurant.increment_number_served(25)
+# print(restaurant.number_served)
+#
+#
+# pokpokpalace = Restaurant('pokpok palace', 'pleasing you')
+# vaginaisland = Restaurant('vagina island', 'puki')
+# hookerfarms = Restaurant('hooker farms', 'riding your dick')
+# girlsgalore = Restaurant('girls galore', 'making your penis happy')
 
 # print(pokpokpalace.restaurant_name)
 # print(pokpokpalace.cuisine_type)
