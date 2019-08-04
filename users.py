@@ -5,6 +5,7 @@ class User():
         self.username = username
         self.email_address = email_address
         self.login_attempts = 0
+        self.privileges = ['can add a post', 'can delete their own post', 'can modify their own post']
 
     def describe_user(self):
         print("\nName: " + self.first_name.title() + " " + self.last_name.title())
@@ -20,7 +21,22 @@ class User():
     def reset_login_attempts(self):
         self.login_attempts = 0
 
-max = User('maximus', 'sallam', 'maximus-sallam', 'maximus.sallam@gmail.com')
+    def show_privilages(self):
+        print(self.first_name.title() + " is a regular user and can only perform the following tasks:")
+        for priv in self.privileges:
+            print("- " + priv)
+
+class Admin(User):
+    def __init__(self, first_name, last_name, username, email_address):
+        super().__init__(first_name, last_name, username, email_address)
+        self.privileges = ['can add a post', 'can delete any post', 'can modify any post', 'can ban any user', 'can have sex with any user']
+
+    def show_privilages(self):
+        print(self.first_name.title() + " is an Admin and can perform the following tasks:")
+        for priv in self.privileges:
+            print("- " + priv)
+
+max = Admin('maximus', 'sallam', 'maximus-sallam', 'maximus.sallam@gmail.com')
 ven = User('venus', 'pondevida', 'venusseventeen', 'venuspondevida@gmail.com')
 joe = User('joe', 'higgins', 'ibbit52', 'joe-thehigg-higgins52@gmail.com')
 cortney = User('cortney', 'blohm', 'swedish-fish-and-meatballs', 'sweden66@swedes.com')
@@ -29,22 +45,28 @@ camron = User('camron', 'rawls', 'rawlsymcbawlsy','roatating-amber-warning-light
 
 max.describe_user()
 max.greet_user()
-max.increment_login_attempts()
-print(max.login_attempts)
-max.increment_login_attempts()
-print(max.login_attempts)
-max.increment_login_attempts()
-print(max.login_attempts)
-max.reset_login_attempts()
-print(max.login_attempts)
+# max.increment_login_attempts()
+# print(max.login_attempts)
+# max.increment_login_attempts()
+# print(max.login_attempts)
+# max.increment_login_attempts()
+# print(max.login_attempts)
+# max.reset_login_attempts()
+# print(max.login_attempts)
+max.show_privilages()
 
-# ven.describe_user()
-# ven.greet_user()
+ven.describe_user()
+ven.greet_user()
+ven.show_privilages()
+
 # joe.describe_user()
 # joe.greet_user()
+
 # cortney.describe_user()
 # cortney.greet_user()
+
 # alex.describe_user()
 # alex.greet_user()
+
 # camron.describe_user()
 # camron.greet_user()
