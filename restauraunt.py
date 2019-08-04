@@ -35,6 +35,7 @@ class IceCreamStand(Restaurant):
 
 restaurant = IceCreamStand('massagy boom boom', 'rubbing your dick')
 restaurant.describe_retaurant()
+restaurant.open_restaurant()
 restaurant.display_flavors()
 
 # print(restaurant.number_served)
