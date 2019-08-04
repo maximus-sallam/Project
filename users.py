@@ -32,7 +32,7 @@ class Admin(User):
         self.privileges = ['can add a post', 'can delete any post', 'can modify any post', 'can ban any user', 'can have sex with any user']
 
     def show_privilages(self):
-        print(self.first_name.title() + " is an Admin and can perform the following tasks:")
+        print(self.first_name.title() + " is an Admin user and can perform the following tasks:")
         for priv in self.privileges:
             print("- " + priv)
 
