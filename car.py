@@ -90,6 +90,13 @@ class Battery():
         message += " miles on a full charge."
         print(message)
 
+    def upgrade_battery(self):
+        if self.battery_size == 70:
+            self.battery_size = 85
+            print("Battery upgraded to 85-kWh.")
+        else:
+            print("No upgrades available.")
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
@@ -115,6 +122,9 @@ print(my_tesla.get_descriptive_name())
 
 my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
 my_tesla.fill_gas_tank()
 my_tesla.drive_somewhere(25)
 
