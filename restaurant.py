@@ -33,10 +33,10 @@ class IceCreamStand(Restaurant):
         for flavor in self.flavors:
             print("- " + flavor.title())
 
-restaurant = IceCreamStand('massagy boom boom', 'rubbing your dick')
-restaurant.describe_retaurant()
-restaurant.open_restaurant()
-restaurant.display_flavors()
+# restaurant = IceCreamStand('massagy boom boom', 'rubbing your dick')
+# restaurant.describe_retaurant()
+# restaurant.open_restaurant()
+# restaurant.display_flavors()
 
 # print(restaurant.number_served)
 # restaurant.number_served = 23
