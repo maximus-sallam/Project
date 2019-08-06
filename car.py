@@ -1,4 +1,4 @@
-"""A class that can be used to represent a car."""
+"""A set of classes used to represent gas and electric cars."""
 
 class Car():
     """A simple attempt to represent a car."""
