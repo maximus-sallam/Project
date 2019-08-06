@@ -11,9 +11,3 @@ my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
 my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()
-
-# my_new_car.odometer_reading = 23
-# my_new_car.read_odometer()
-# my_new_car.fill_gas_tank()
-# my_new_car.drive_somewhere(25)
-
