@@ -1,0 +1,5 @@
+In Python you can loop through text or actions
+In Python you can open files and read, write, or modify their contents
+In Python you can analyze and visualize data
+In Python you can create video games
+In Python you can create applications
