@@ -3,9 +3,9 @@ def print_animals(filename):
         with open(filename) as f_obj:
             contents = f_obj.read()
     except FileNotFoundError:
-        msg = "\nSorry, the file " + filename + " does not exist."
-        print(msg)
-        # pass
+        # msg = "\nSorry, the file " + filename + " does not exist."
+        # print(msg)
+        pass
     else:
         print("\nFile: " + filename + "\n" + contents)
 
